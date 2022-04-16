@@ -69,14 +69,22 @@ Latihan pengulangan dan percabangan
             <div class="alert alert-success alert-dismissible">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
               <h4><i class="icon fa fa-info"></i> Hasil Perhitungan !</h4>
-              <p>NIK:{{$data['nik']}}</p>
-              <p>Nama:{{$data['nama']}}</p>
+              <p>NIK          :{{$data['nik']}}</p>
+              <p>Nama         :{{$data['nama']}}</p>
+              <p>Tanggal Masuk:{{$data['tglmasuk'] . " (" . $data['totaltahun'] . " Tahun)"}}</p>
+              <p>Golongan     :{{$data['golongan']}}</p>
+              <p>Status       :{{$data['status']}}</p>
+              <p>Anak         :{{$data['anak']}}</p>
+              <p>Gaji Pokok   :{{"Rp " . number_format($data['gajipokok'],2,',','.')}}</p>
+              <p>Tunjangan    :{{"Rp " . number_format($data['tunjangan'],2,',','.')}}</p>
+              <p>Potongan     :{{"Rp " . number_format($data['potongan'],2,',','.')}}</p>
+              <p>Total Gaji     :{{"Rp " . number_format($data['totalgaji'],2,',','.')}}</p>
             </div>
           @endif
         </div>
         <!-- /.box-body -->
         <div class="box-footer text-center">
-          <button type="reset" class="btn btn-default" value="Reset">Reset</button>
+          <a href="{{url("tugas-pertama")}}" class="btn btn-default">Reset</a>
           <button type="submit" class="btn btn-info">Hitung</button>
         </div>
       </form>

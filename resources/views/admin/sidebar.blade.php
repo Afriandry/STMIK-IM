@@ -35,6 +35,8 @@
         <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="{{URL::to('/')}}"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
         <li class="{{ (request()->is('pertemuan-pertama')) ? 'active' : '' }}"><a href="{{URL::to('pertemuan-pertama')}}"><i class="fa fa-database"></i> <span>Pertemuan Pertama</span></a></li>
         <li class="{{ (request()->is('tugas-pertama')) ? 'active' : '' }}"><a href="{{URL::to('tugas-pertama')}}"><i class="fa fa-database"></i> <span>Tugas Pertama</span></a></li>
+        <li class="{{ (request()->is('uts')) ? 'active' : '' }}"><a href="{{URL::to('uts')}}"><i class="fa fa-database"></i> <span>UTS</span></a></li>
+        <li class="{{ (request()->is('thr')) ? 'active' : '' }}"><a href="{{URL::to('thr')}}"><i class="fa fa-database"></i> <span>Tugas Kelompok</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
