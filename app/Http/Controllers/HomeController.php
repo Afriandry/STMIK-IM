@@ -127,14 +127,14 @@ class HomeController extends Controller
         return view('uts', compact('data'));
     }
 
-    public function uas()
+    public function tk()
     {
-        $pegawai = DB::table('trx_thr')->get();
-        return view('uas.index', compact('pegawai'));
+        $thr = DB::table('trx_thr')->get();
+        return view('tk.index', compact('thr'));
     }
 
     public function tambahThr() {
-        return view('uas.create');
+        return view('tk.create');
     }
 
     public function saveThr(Request $request)

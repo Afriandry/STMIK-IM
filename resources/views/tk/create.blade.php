@@ -4,14 +4,14 @@
   <link rel="stylesheet" href="{{asset('lte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
 @endsection
 @section('breadcrumb')
-Latihan pengulangan dan percabangan
+Tambah Data THR
 @endsection
 @section('content')
 <div class="row">
   <div class="col-md-12">
     <div class="box box-info">
       <div class="box-header with-border">
-        <h3 class="box-title">Perhitungan Gaji</h3>
+        <h3 class="box-title">Tambah Data THR</h3>
       </div>
       <!-- /.box-header -->
       <form action="{{url('thr/save')}}" method="post">

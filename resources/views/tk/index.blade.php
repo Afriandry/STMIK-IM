@@ -57,8 +57,8 @@ Kelompok
           </tr>
           </thead>
           <tbody>
-            @if (count($pegawai) > 0)
-              @foreach($pegawai as $key => $p)
+            @if (count($thr) > 0)
+              @foreach($thr as $key => $p)
                 <tr>
                   <td>{{$key+1}}</td>
                   <td>{{ $p->nama }}</td>
